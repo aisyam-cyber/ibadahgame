@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>KURSUS EMERGENCY RESPONSE TEAM</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f5f5f5);
+    color: #333;
+  }
+
+  header {
+    background: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card {
+    background: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    color: #b71c1c;
+  }
+
+  .btn {
+    display: block;
+    margin: 10px auto;
+    padding: 14px;
+    width: 80%;
+    max-width: 400px;
+    background: #1565c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background: #0d47a1;
+  }
+
+  footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #263238;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  audio {
+    display: none;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  KURSUS EMERGENCY RESPONSE TEAM (ERT)<br>
+  HOSPITAL KEMAMAN
+</header>
+
+<!-- MUZIK -->
+<audio id="music" autoplay muted loop>
+  <source src="ERT TEAM.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <div class="card">
+    <h2>📍 Maklumat Kursus</h2>
+    <p><b>Tempat:</b> Balai Chukai, Kemaman</p>
+    <p><b>Tarikh:</b> 15 & 16 Jun 2026</p>
+    <p><b>Masa:</b> 8.00 pagi – 5.00 petang</p>
+  </div>
+
+  <div class="card">
+    <h2>📌 Akses Peserta Kursus</h2>
+
+    <a class="btn" target="_blank"
+      href="https://forms.gle/2vF6kFRxzZMjHxhL8">
+      📝 DAFTAR PESERTA KURSUS ERT
+    </a>
+
+    <a class="btn" target="_blank"
+      href="https://drive.google.com/drive/folders/1PMlyKPguF6ciK25PdQyd2elfVO7lrUyz?usp=drive_link">
+      🎓 SEMAK SIJIL KURSUS ERT
+    </a>
+
+    <a class="btn" target="_blank"
+      href="https://forms.gle/KzxVLUkLWKxejnHN8">
+      📋 MAKLUM BALAS KURSUS ERT
+    </a>
+
+    <a class="btn" target="_blank"
+      href="https://drive.google.com/file/d/1KkdtXp-tGwyCXY3eBryHJXSI-UcJGvar/view?usp=drive_link">
+      📅 TENTATIF KURSUS ERT
+    </a>
+
+  </div>
+
+</div>
+
+<footer>
+  Perkhidmatan urusetia oleh Unit Penyeliaan Hospital Kemaman<br><br>
+
+  Terima kasih kepada semua peserta kursus AERT atas komitmen dan kerjasama yang diberikan sepanjang program ini berlangsung.
+</footer>
+
+<script>
+let music = document.getElementById("music");
+
+// cuba autoplay (browser akan mute dulu)
+window.addEventListener("load", () => {
+  music.play().catch(() => {});
+});
+
+// bila user klik mana-mana → bunyi ON
+document.addEventListener("click", () => {
+  music.muted = false;
+  music.play();
+}, { once: true });
+</script>
+
+</body>
+</html>
